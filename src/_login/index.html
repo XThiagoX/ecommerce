@@ -6,6 +6,40 @@
     <title>ecommerce - login</title>
 </head>
 <body>
-    <p>Login</p>
+    <nav>
+        <ul>
+            <li><a href="/cart">Carrinho</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/product">Produto</a></li>
+        </ul>
+    </nav>
+
+    <form action="/user/create/" method="post">
+        <div class="flex flex-col w-80">
+            <label for="username">Username:</label>
+            <input autocomplete="off" id="username" type="text">
+
+            <label for="email">Email:</label>
+            <input autocomplete="off" type="email">
+
+            <label for="passsword">Passsword:</label>
+            <input autocomplete="off" type="password">
+
+            <input type="submit" value="Confirmar">
+        </div>
+    </form>
+
+    <footer class="flex flex-col">
+        <div>
+            <p>Sponsors</p>
+            <span>Paulo</span>
+            <span>Tiago</span>
+            <span>Vitor</span>
+            <span>Yuri</span>
+            <span>Renan</span>
+        </div>
+
+        <p>ecommerce &copy; 2020</p>
+    </footer>
 </body>
 </html>

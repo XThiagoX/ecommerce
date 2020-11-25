@@ -9,10 +9,10 @@ module.exports = {
   entry: './src/js/main.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public')
+    path: path.resolve(__dirname, 'dist')
   },
   devServer: {
-    contentBase: path.join(__dirname, 'public'),
+    contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 3000
   },
@@ -34,8 +34,12 @@ module.exports = {
       filename: 'login/index.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/_products/index.html',
+      template: './src/_product/index.html',
       filename: 'products/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/_cart/_status/index.html',
+      filename: 'cart/status/index.html'
     }),
     new MiniCssExtractPlugin({
       filename: 'assets/styles.css'

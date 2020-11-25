@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ecommerce - admin</title>
+    <title>ecommerce - product</title>
 </head>
 <body>
-    <p>Admin</p>
+    <nav>
+        <ul>
+            <li><a href="/cart">Carrinho</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/product">Produto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div>
+            <p>R&dollar; 100.000,00 em estoque</p>
+            <p>R&dollar; 50.000,00 liquidos</p>
+            <p>80 produtos vendidos</p>
+        </div>
+
+        <form action="/product/create" method="post">
+            <div class="flex flex-col w-80">
+                <h1>Cadastrar novos Produtos</h1>
+
+                <label for="name">Nome:</label>
+                <input type="text">
+
+                <label for="qnd">Quantidade:</label>
+                <input type="number">
+
+                <label for="image-max">Thumbnail:</label>
+                <input type="url" placeholder="600x300">
+
+                <label for="image-min">Thumbnail:</label>
+                <input type="url" placeholder="500x200">
+
+                <input type="submit" value="Confirmar">
+            </div>
+        </form>
+    </main>
+
+    <footer class="flex flex-col">
+        <div>
+            <span>Paulo</span>
+            <span>Tiago</span>
+            <span>Vitor</span>
+            <span>Yuri</span>
+            <span>Renan</span>
+        </div>
+
+        <p>ecommerce &copy; 2020</p>
+    </footer>
 </body>
 </html>
