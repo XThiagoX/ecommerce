@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/styles.css" rel="stylesheet">
+    <title>ecommerce - products</title>
+</head>
+<body class="bg-blue-600">
+    <nav>
+        <ul  class="flex gap-4 bg-white shadow-xl border border-gray-300 p-4">
+            <li><a class="text-a" href="/login">Login</a></li>                    
+            <li><a class="text-a" href="/product">Produto</a></li>
+            <li><a class="text-a" href="/cart">Carrinho</a></li>
+        </ul>
+    </nav>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="bg-white lg:min-h-screen lg:flex lg:items-center p-8 sm:p-12">
+           <div class="flex-grow">
+            <main class="flex flex-row">
+                <div>
+                    <img 
+                    src="https://a-static.mlcdn.com.br/618x463/iphone-11-apple-64gb-preto-61-12mp-ios/magazineluiza/155610500/e1d5e02a58e9cb34322c1fb4df7ed762.jpg"
+                    width="600"
+                    height="300"
+                    alt="product-0"
+                    >
+                </div>                                  
+            </main>
+               <h1 class="text-white text-center text-5xl sm:text-5xl mb-2">
+                   Seja Bem-vindo(a)
+               </h1>
+               <p class="text-center text-blue-200 sm:text-lg">
+                   Faça seu long para começar
+               </p>
+           </div>
+        </div>
+        <div class="lg:min-h-screen lg:flex lg:items-center p-12 lg:p-12 xl:p-48">
+            <div class="flex-grow bg-white shadow-xl rounded-md border border-gray-300 p-8">
+                <div class="sm:flex sm:items-center">                    
+                    <div class="sm:ml-4 sm:text-left text-center">
+                        <div class="grid grid-cols-2">                            
+                            <h1>Iphone 11</h1>
+                            <span class="text-red-300">8 disponíveis</span>
+                            <button class="btn btn-green">Adicionar ao carrinho</button>
+                            <p>O celular Apple iPhone 11 foi lançado em 10 de setembro de 2019 e tem uma ficha técnica interessante. Quem gosta de tirar fotos conta com uma câmera de 12 MP + 12 MP, além de 12 MP para capturar as famosas selfies. Seguindo com as especificações, ele também é equipado com 4 GB de RAM, memória interna de 64 GB, 128 GB ou 256 GB e o processador Apple A13 Bionic.</p>                           
+                        </div>                 
+                    </div>
+                </div>
+                <form class="flex w-full mt-8">
+                    <input type="password"  placeholder="Sua Senha" class="flex-0 w-full text-gray-700 bg-gray-200 rounded-md hover:bg-white border border-gray-200 focus:outline-none focus:bg-white py-2 px-4">
+                    <button  type="button" class="flex-shrink-0 btn btn-green">
+                        Entrar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>   
+
+    <main class="flex flex-row">
+        <div>
+            <img 
+            src="https://a-static.mlcdn.com.br/618x463/iphone-11-apple-64gb-preto-61-12mp-ios/magazineluiza/155610500/e1d5e02a58e9cb34322c1fb4df7ed762.jpg"
+            width="600"
+            height="300"
+            alt="product-0"
+            >
+            <div>
+                <span>8 disponíveis</span>
+                <h1>Iphone 11</h1>
+                <p>O celular Apple iPhone 11 foi lançado em 10 de setembro de 2019 e tem uma ficha técnica interessante. Quem gosta de tirar fotos conta com uma câmera de 12 MP + 12 MP, além de 12 MP para capturar as famosas selfies. Seguindo com as especificações, ele também é equipado com 4 GB de RAM, memória interna de 64 GB, 128 GB ou 256 GB e o processador Apple A13 Bionic.</p>
+                <button>Adicionar ao carrinho</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="flex flex-col bg-white mt-24 -mb-36 max-w-auto text-blue-400 font-semibold pt-6 pb-6">
+        <p class="ml-20">Sponsors</p>
+        <div class="grid justify-items-center max-w-auto">
+            <div class="grid grid-cols-5 grid-row-1">            
+                <span>Paulo Sergio</span>
+                <span>Thiago Araujo</span>
+                <span>Vitor Menezes</span>
+                <span>Yuri Feraz</span>
+                <span>Renan Paulino</span>
+            </div>
+            <p class="ml-20">ecommerce &copy; 2020</p>
+        </div>               
+    </footer>
+</body>
+</html>

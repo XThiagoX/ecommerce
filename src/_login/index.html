@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/styles.css" rel="stylesheet">
+    <title>ecommerce - login</title>
+</head>
+<body class="bg-blue-400">
+    <nav>
+        <ul  class="flex gap-4 bg-white shadow-xl border border-gray-300 p-4">
+            <li><a class="text-a" href="/login">Login</a></li>                    
+            <li><a class="text-a" href="/product">Produto</a></li>
+            <li><a class="text-a" href="/cart">Carrinho</a></li>
+        </ul>
+    </nav>
+
+    <form action="/user/create/" method="post" class="lg:items-center pl-56 pt-24 ">
+        <div class="flex flex-col w-40 grid grid-flow-col auto-cols-max gap-4">
+            <div class="flex-grow bg-white shadow-xl rounded-md border border-gray-300 p-8">
+                <label for="username" class="text-xl text-gray-700">Username:</label>
+                <input autocomplete="off" id="username" type="text" class="input border border-gray-200 mt-1 mb-2 ">
+
+                <label for="email" class="text-xl text-gray-700">Email:</label>
+                <input autocomplete="off" type="email" class="input border border-gray-200 mt-1 mb-2">
+
+                <label for="passsword" class="text-xl text-gray-700">Passsword:</label>
+                <input autocomplete="off" type="password" class="input border border-gray-200 mt-1 mb-2">
+
+                <input type="submit" value="Confirmar" class="btn btn-green mt-4 ml-0">
+            </div>
+        </div>
+    </form>
+
+    <footer class="flex flex-col bg-white mt-24 -mb-36 max-w-auto text-blue-400 font-semibold pt-6 pb-6 justify-between">
+        <p class="ml-20">Sponsors</p>
+        <div class="grid justify-items-center max-w-auto">
+            <div class="flex flex-col grid grid-cols-5 grid-row-1">            
+                <span>Paulo Sergio</span>
+                <span class="mr-3">Thiago Araujo</span>
+                <span class="mr-3">Vitor Menezes</span>
+                <span class="mr-0">Yuri Feraz</span>
+                <span>Renan Paulino</span>
+            </div>
+            <p class="ml-20">ecommerce &copy; 2020</p>
+        </div>               
+    </footer>
+</body>
+</html>
